@@ -1,11 +1,13 @@
 package lang.print.gaps.finalModuleTask;
 
 public class NumberReverter {
-    public int (int number) {
-        return number;
-        System.out.println(number);
-    }
-    static int sum(int number){
-        return number;
+    public void revert(int number) {
+        int exit;
+        exit = (number % 10) * 100;
+        number = (number - number % 10)/10;
+        exit = exit + (number % 10) * 10;
+        number = (number - number % 10)/10;
+        exit = exit + number;
+        System.out.println(exit);
     }
 }
